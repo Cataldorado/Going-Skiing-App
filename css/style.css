@@ -1,0 +1,198 @@
+h2{color:#fff; margin-left: 28px;}     
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.header {
+    padding: 60px 0px 40px 0px;
+}
+
+.waxform {
+            background-image:url('../img/vertical_fabric_light.png');
+            background-color: #2e82c8;
+    
+            background-position: center;
+            padding-top: 60px;
+            font-family: 'Raleway', sans-serif;
+            padding-bottom: 60px;
+            background-position: 0 0;
+            background-repeat: repeat;
+             box-shadow: -2px 7px 23px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: -2px 7px 23px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: -2px 7px 23px rgba(0, 0, 0, 0.80);
+}
+        }
+        
+        .waxform h2, .skiform h2 {
+            color: #fff;
+        }
+        
+        #userCity, #userCitylens, #userCitySkis {
+            height: 58px;
+            border: 1px solid #fff !important;
+            border-radius: 7px;
+            margin-top: 15px;
+            font-family: 'Raleway', sans-serif;
+            width: 250px;
+            margin-left: 40px;
+        }
+        
+        #userState, #userStatelens, #userStateSkis {
+            height: 58px;
+            border: 1px solid #fff !important;
+            border-radius: 7px;
+            margin-top: 15px;
+            font-family: 'Raleway', sans-serif;
+            width: 250px;
+            margin-left: -130px;
+        }
+        
+        input.transparent-input {
+            border: none !important;
+            color: #fff;
+            font-size: 25px;
+            padding-left: 20px;
+        }
+        
+        .transparent-input {
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+        }
+        
+        input.transparent-input {
+            background-color: rgba(0, 0, 0, 0) !important;
+            border: 1 px solid #fff !important;
+        }
+        
+        .city {
+            font-size: 20px;
+            margin-bottom: -10px;
+        }
+        
+        .itemDescription {
+            text-align: left;
+            color: white;
+            border: 1px solid #fff !important;
+            border-radius: 7px;
+            margin-top: 15px;
+            font-family: 'Raleway', sans-serif;
+            margin-left: -50px;
+            padding: 25px;
+            background-color: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+        }
+
+.lensDescription {
+    text-align: left;
+    color: white;
+    border: 1px solid #fff !important;
+    border-radius: 7px;
+    margin-top: -173px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: -50px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+}
+
+.skisDescription {
+    text-align: left;
+    color: white;
+    border: 1px solid #fff !important;
+    border-radius: 7px;
+    margin-top: -173px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: -50px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+}
+        
+        .trans-butt {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 7px;
+        }
+        
+        .btn-success {
+            color: #fff;
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+            padding: 15px;
+            border: 1px solid #fff;
+            margin-top: 20px;
+        }
+        
+        .weather, #lensWeather, #showsnow {
+            color: #fff;
+            text-align: left;
+            margin-top: 60px;
+            /* margin-right: -100px; */
+            padding-left: 145px;
+            font-size: 15px;
+        }
+
+     .lensform {
+
+           background-image:url('../img/vertical_fabric_light.png');
+            background-color: #28C2FF;
+            background-position: center;
+            padding-top: 60px;
+            font-family: 'Raleway', sans-serif;
+            padding-bottom: 60px;
+            background-position: 0 0;
+            background-repeat: repeat;
+          box-shadow: -2px 7px 23px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: -2px 7px 23px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: -2px 7px 23px rgba(0, 0, 0, 0.80);
+        }
+        }
+        
+        .lensform h2 {
+            color: #fff;
+        }
+
+.btn-primary {
+            color: #fff;
+            
+            border-color: #4cae4c;
+            padding: 15px;
+            border: 1px solid #fff;
+            margin-top: 20px;
+        }
+
+
+.lens {
+    width: 20.66666667% !important;
+}
+
+.skiform{
+/*            margin-top: 30px;*/
+/*            background-image: url(../img/bg-skier.jpg);*/
+            /* min-height: 542px; */
+    background-image:url('../img/vertical_fabric_light.png');
+            background-color: #7CC6FE;
+            background-position: center;
+            padding-top: 60px;
+            font-family: 'Raleway', sans-serif;
+            padding-bottom: 60px;
+            background-position: 0 0;
+            background-repeat: repeat;
+     box-shadow: -2px 7px 23px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: -2px 7px 23px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: -2px 7px 23px rgba(0, 0, 0, 0.80);
+        }
+    
+    
+}
+#showSkis {
+    color: #fff !important;
+}
+    
+#showlens {
+    margin-top: -50px;
+    margin-left: 16px;
+}
+       

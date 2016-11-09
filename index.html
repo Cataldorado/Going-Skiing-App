@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+
+
+    <title>Ski Wax Selector</title>
+
+    <!--  -->
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+   <div class="container">
+       <div class="header">
+    
+    <h1>Going Skiing</h1>
+           <p>Built to assist skiers in wax, goggle lens & ski width selection according to real time weather conditions.</p>
+           
+           </div>
+    
+    </div>
+    <div align="center" class="waxform">
+        <div class="row">
+            <div class="col-md-4" id="waxTitle">
+                <h2>Ski Wax Selector</h2>
+                <div class="city" style="margin-left:-160px; color:#fff">City &nbsp;</div>
+                <input class="transparent-input" type="text" id="userCity" required>
+                <div class="city" style="margin-left:-99px; margin-top:20px; color:#fff">State Code &nbsp;</div>
+                <input class="transparent-input" type="text" id="userState" maxlength="2" style="width:80px" required>
+                <br>
+                <br>
+
+                <button class="btn btn-success" onclick="makePlace(document.getElementById('userCity').value, document.getElementById('userState').value, 'wax')">Show Reccommended Wax</button>
+            </div>
+            <div class="col-md-2" id="wax-yellow"><img src="img/wax-yellow.png"></div>
+            <div class="col-md-2" id="wax-red"><img src="img/wax-red.png"></div>
+            <div class="col-md-2" id="wax-violet"><img src="img/wax-violet.png"></div>
+            <div class="col-md-2" id="wax-blue"><img src="img/wax-blue.png"></div>
+
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-4 weather">
+                <div id="showme"></div>
+                <div id="showtemp"></div>
+                <div id="showwax"></div>
+            </div>
+            <div class="col-md-8 itemDescription" id="showDescription">
+                <div id="descript"></div>
+            </div>
+
+        </div>
+
+
+        </div>
+     <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax1.jpg"></div>
+
+    
+    
+     <div align="center" class="lensform">
+        <div class="row">
+            <div class="col-md-4" id="waxTitle">
+                <h2 style="margin-left:136px">Ski Goggle Lens Selector</h2>
+                <div class="city" style="margin-left:-160px; color:#fff">City &nbsp;</div>
+                <input class="transparent-input" type="text" id="userCitylens" required>
+                <div class="city" style="margin-left:-99px; margin-top:20px; color:#fff">State Code &nbsp;</div>
+                <input class="transparent-input" type="text" id="userStatelens" maxlength="2" style="width:80px" required>
+                <br> 
+                <br>
+
+                <button class="btn btn-primary" style="margin-left:50px" onclick="makePlace(document.getElementById('userCitylens').value, document.getElementById('userStatelens').value, 'lens')" >Show Reccommended Goggle Lens</button>
+                <div id="lensWeather"></div>
+            </div>
+            <div class="col-md-2 lens" id="lens-polarized"><img src="img/lens-polarized.png"></div>
+            <div class="col-md-2 lens" id="lens-photochromic"><img src="img/lens-photochromic.png"></div>
+            <div class="col-md-2 lens" id="lens-mirror"><img src="img/lens-mirror.png"></div>
+            <div class="col-md-2 lens" id="wax-blue"></div>
+
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-4 weather">
+                <div id="showme"></div>
+                <div id="showtemp"></div>
+                <div id="showlens"></div>
+            </div>
+            <div class="col-md-8 lensDescription" id="lensDescription">
+                <div id="descriptLens"></div>
+            </div>
+
+        </div>
+
+
+    </div>
+     <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax2.jpg"></div>
+    
+    <!---------------------------------------------------Ski Width Start------->
+
+        <div align="center" class="skiform">
+        <div class="row">
+            <div class="col-md-4" id="waxTitle">
+                <h2 style="margin-left:47px">Ski Width Selector</h2>
+                <div class="city" style="margin-left:-160px; color:#fff">City &nbsp;</div>
+                <input class="transparent-input" type="text" id="userCitySkis" required>
+                <div class="city" style="margin-left:-99px; margin-top:20px; color:#fff">State Code &nbsp;</div>
+                <input class="transparent-input" type="text" id="userStateSkis" maxlength="2" style="width:80px" required>
+                <br>
+                <br>
+
+                <button class="btn btn-primary" style="margin-left:30px" onclick="makeTotal(document.getElementById('userCitySkis').value, document.getElementById('userStateSkis').value, 'skis')">Show Reccommended Ski Width</button>
+                <div id="showsnow"></div>
+                <div id="skisuggestion"></div>
+                <div id="lensWeather"></div>
+                <div id="skiImage"></div>
+                <div id="showSkis" style="color:#fff"></div>
+            </div>
+            <div class="col-md-2 lens" id="lens-polarized"><img src="img/skis-skinny.png">All-Mountain Skis</div>
+            <div class="col-md-2 lens" id="lens-photochromic"><img src="img/skis-mid.png">All-Mountain Fat Skis</div>
+            <div class="col-md-2 lens" id="lens-mirror"><img src="img/skis-fat.png">Powder Skis</div>
+            <div class="col-md-2 lens" id="wax-blue"></div>
+
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-4 weather">
+                <div id="showme"></div>
+                <div id="showtemp"></div>
+                <div id="showwax"></div>
+                <div id="showlens"></div>
+            </div>
+            <div class="col-md-8 skisDescription" id="skisDescription">
+                <div id="descriptSkis"></div>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax3.jpg"></div>
+
+
+    <div class="container">
+
+
+        
+        
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <!--    <script src="js/script-snow.js"></script>-->
+
+    <script>
+        
+        </script>
+
+    </script>
+
+</body>
+
+</html>
